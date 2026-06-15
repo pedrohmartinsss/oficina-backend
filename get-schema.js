@@ -1,0 +1,1 @@
+// Temporary schema script (cleared)
