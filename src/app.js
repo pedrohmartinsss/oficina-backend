@@ -23,4 +23,12 @@ app.use("/api/usuarios", usuariosRoutes);
 app.use("/api/agenda", agendaRoutes);
 app.use("/api/notificacoes", notificacoesRoutes);
 
+app.get("/", (req, res) => {
+    res.status(200).json({
+        status: "online",
+        sistema: "Oficina Backend",
+        versao: "1.0.0"
+    });
+});
+
 export default app;
