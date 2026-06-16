@@ -14,6 +14,7 @@ const app = express();
 
 app.use(cors({
   origin: [
+    "https://pedrohenriquemartins1780685422027.2361793.meusitehostgator.com.br",
     "https://seudominio.com.br",
     "https://www.seudominio.com.br"
   ],
