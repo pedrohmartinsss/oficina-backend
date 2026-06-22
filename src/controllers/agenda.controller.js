@@ -120,7 +120,9 @@ function formatResponseRow(row) {
         telefone: row.telefone,
         tipo: row.tipo,
         placa: row.placa || "",
-        data: row.data,
+        data: row.data
+            ? row.data.toISOString().split("T")[0]
+            : null,
         hora: row.hora,
         observacoes: row.observacoes,
         status: row.status,
